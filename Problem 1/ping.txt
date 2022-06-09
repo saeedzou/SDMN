@@ -1,0 +1,61 @@
+Script started on 2022-06-09 21:21:54+0430
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# nano /etc/profile[7Pgo versionnano /etc/profile[Knano /etc/profile[7Pgo versionsource $HOME/.profile[5P/.profile$HOME/.profile[11Pgo versionnano /etc/profile[K./create_network.sh 
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node1 node2
+PING 172.0.0.3 (172.0.0.3) 56(84) bytes of data.
+64 bytes from 172.0.0.3: icmp_seq=1 ttl=64 time=9.20 ms
+64 bytes from 172.0.0.3: icmp_seq=2 ttl=64 time=0.105 ms
+64 bytes from 172.0.0.3: icmp_seq=3 ttl=64 time=0.108 ms
+^C
+--- 172.0.0.3 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2029ms
+rtt min/avg/max/mdev = 0.105/3.139/9.204/4.288 ms
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node1 node2[K3
+PING 10.10.0.2 (10.10.0.2) 56(84) bytes of data.
+64 bytes from 10.10.0.2: icmp_seq=1 ttl=63 time=23.6 ms
+64 bytes from 10.10.0.2: icmp_seq=2 ttl=63 time=0.121 ms
+64 bytes from 10.10.0.2: icmp_seq=3 ttl=63 time=0.115 ms
+^C
+--- 10.10.0.2 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2006ms
+rtt min/avg/max/mdev = 0.115/7.951/23.618/11.078 ms
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node1 node3[K4
+PING 10.10.0.3 (10.10.0.3) 56(84) bytes of data.
+64 bytes from 10.10.0.3: icmp_seq=1 ttl=63 time=24.5 ms
+64 bytes from 10.10.0.3: icmp_seq=2 ttl=63 time=0.151 ms
+64 bytes from 10.10.0.3: icmp_seq=3 ttl=63 time=0.134 ms
+^C
+--- 10.10.0.3 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2012ms
+rtt min/avg/max/mdev = 0.134/8.292/24.592/11.525 ms
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node1 node4[1P node4
+Cannot open network namespace "node": No such file or directory
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node node43 node4
+PING 10.10.0.3 (10.10.0.3) 56(84) bytes of data.
+64 bytes from 10.10.0.3: icmp_seq=1 ttl=64 time=2.55 ms
+64 bytes from 10.10.0.3: icmp_seq=2 ttl=64 time=0.110 ms
+64 bytes from 10.10.0.3: icmp_seq=3 ttl=64 time=0.133 ms
+^C
+--- 10.10.0.3 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 0.110/0.931/2.550/1.144 ms
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node3 node4[C[K2
+PING 172.0.0.3 (172.0.0.3) 56(84) bytes of data.
+64 bytes from 172.0.0.3: icmp_seq=1 ttl=63 time=0.257 ms
+64 bytes from 172.0.0.3: icmp_seq=2 ttl=63 time=0.117 ms
+64 bytes from 172.0.0.3: icmp_seq=3 ttl=63 time=0.116 ms
+^C
+--- 172.0.0.3 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2030ms
+rtt min/avg/max/mdev = 0.116/0.163/0.257/0.067 ms
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# ./ping.sh node3 node2[K[K[K[K[Krouter
+PING 10.10.0.1 (10.10.0.1) 56(84) bytes of data.
+64 bytes from 10.10.0.1: icmp_seq=1 ttl=64 time=7.12 ms
+64 bytes from 10.10.0.1: icmp_seq=2 ttl=64 time=0.074 ms
+64 bytes from 10.10.0.1: icmp_seq=3 ttl=64 time=0.081 ms
+^C
+--- 10.10.0.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2031ms
+rtt min/avg/max/mdev = 0.074/2.425/7.122/3.321 ms
+]0;root@ubuntu: /home/saeedzou/sdmn/hw/SDMN/Problem 1root@ubuntu:/home/saeedzou/sdmn/hw/SDMN/Problem 1# exit
+
+Script done on 2022-06-09 21:22:54+0430
