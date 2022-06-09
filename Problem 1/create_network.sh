@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
-'''
-    Instructions to run this script:
-        sudo ./create_network.sh
-    
-    This file creates 5 nodes each in their own network namespace,
-    assigns static ips to them which are on 2 subnets,
-    then we set up default gateways and veth pairs on each namespace and add two bridges 
-    for them to communicate.
 
-'''
+    # Instructions to run this script:
+    #     chmod 755 ./create_network.sh
+    #     sudo ./create_network.sh
+    
+    # This file creates 5 nodes each in their own network namespace,
+    # assigns static ips to them which are on 2 subnets,
+    # then we set up default gateways and veth pairs on each namespace and add two bridges 
+    # for them to communicate.
+
+
 # create namespaces
 ip netns add node1  #172.0.0.2/24
 ip netns add node2  #172.0.0.3/24
