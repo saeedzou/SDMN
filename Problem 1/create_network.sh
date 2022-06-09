@@ -10,7 +10,7 @@
     # for them to communicate.
 
 
-# create namespaces
+# Create namespaces
 ip netns add node1  #172.0.0.2/24
 ip netns add node2  #172.0.0.3/24
 ip netns add node3  #10.10.0.2/24
