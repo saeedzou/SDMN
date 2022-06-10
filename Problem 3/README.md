@@ -14,4 +14,4 @@ It handles GET and POST methods
     >> curl -X POST localhost:8000/api/v1/status -H "Content-Type: application/json" -d '{"status": "not OK"}'
 
 ### Example
-![This is a alt text.](https://github.com/saeedzou/SDMN/tree/main/Problem%203/src/images/docker_server.jpg "This is a sample image.")
+![This is a alt text.](https://github.com/saeedzou/SDMN/blob/main/Problem%203/src/images/docker_server.jpg "This is a sample image.")
