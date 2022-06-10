@@ -56,10 +56,10 @@ func child() {
 			cg(os.Args[4])
 		}
 	}	
-	syscall.Sethostname([]byte(os.Args[2]))
-	syscall.Chroot("./ubuntu_fs")
-	syscall.Chdir("/")
-	syscall.Mount("proc", "proc", "proc", 0, "")
+	must(syscall.Sethostname([]byte(os.Args[2])))
+	must(syscall.Chroot("./ubuntu_fs"))
+	must(syscall.Chdir("/"))
+	must(syscall.Mount("proc", "proc", "proc", 0, ""))
 
 	cmd := exec.Command("/bin/bash")
 	cmd.Stdin = os.Stdin
