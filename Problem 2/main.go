@@ -1,12 +1,13 @@
 /**
 	This program creates a container with isolated net, mount, uts, and pid namespaces
 	and runs bash in the container.
-	To run another script when starting the container change the argument of line 59 
+	To run another script when starting the container change the argument of line 65 
 	from "/bin/bash" to your arbitary script
 	Instructions to run this program:
 		1.	Go to the directory where this file is at
-		2.	Run this program with sudo privelage: >> go run main.go <hostname> [-m || --memory] <memory_limit>
-		3.	The memory option is optional and limits the memory usage of the container in megabytes
+		2.	Make a directory named ubuntu_fs and extract the tar file into this folder
+		3.	Run this program with sudo privelage: >> go run main.go <hostname> [-m || --memory] <memory_limit>
+		4.	The memory option is optional and limits the memory usage of the container in megabytes
 
 */
 package main
