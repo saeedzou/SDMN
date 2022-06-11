@@ -1,2 +1,9 @@
 We should add a route for each namespace using the command ip route add to their veth interface
 then in the root namespace we should also use ip route add to add the subnets to their veth pair
+Note that in the implementation of create_network.sh, I assigned ip addresses to the bridges and enabled ip forwarding,
+so even if we don't add routes to root or the namespaces, they will still have communication,
+which is the second way to deal with the problem. If we delete the lines that assigns ip's to bridges
+and the lines that enables ip forwarding on them, while the router and the link between bridges exist,
+the communication still works as fine.
+In conclusion, to allow communication of namespaces we can either use bridges with no ip's, or to assign ip's to bridges
+and enable ip forwarding on them.
