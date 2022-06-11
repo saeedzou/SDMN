@@ -1,0 +1,2 @@
+The rules on the servers must be the same as last part, but on the host we should 
+add route to the other server subnet
