@@ -1,0 +1,2 @@
+We should add a route for each namespace using the command ip route add to their veth interface
+then in the root namespace we should also use ip route add to add the subnets to their veth pair
